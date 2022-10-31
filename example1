@@ -1,11 +1,66 @@
+//example of grade calculation
+
+package deneme1;
+
 import java.util.Scanner;
 
-public static void main(String[]args){
-
-System.out.println("Please enter your midterm results: ");
-double d1
-
-
-
-
+class deneme1 {
+	public static void main (String []args) {
+	
+		System.out.println("Please enter grades of midterm 1 and midterm 2: ");
+		Scanner input = new Scanner(System.in);
+		
+		double midterm1 =input.nextDouble();
+		double midterm2 = input.nextDouble();
+		midterm1 = midterm1 * 0.2;
+		midterm2 = midterm2 * 0.2;
+		
+		
+		
+		System.out.println("Please enter process essay grade: ");
+		double essaygrd = input.nextDouble();
+		essaygrd = essaygrd * 0.3;
+		
+		
+		System.out.println("Please enter discussion grade: ");
+		double discgrade = input.nextDouble();
+		discgrade = discgrade * 0.2;
+		
+		
+		System.out.println("Please enter in lecture grade: ");
+		double lecturegrd = input.nextDouble();
+		lecturegrd = lecturegrd * 0.1;
+		
+		double total_grade = midterm1 + midterm2+ essaygrd + discgrade + lecturegrd;
+		total_grade = (int) total_grade;
+		String letter_grade = " ";
+		
+		
+		if(total_grade<=53){
+			letter_grade = "F";
+		}else if(total_grade<=57 && total_grade >=54){
+			letter_grade = "D";
+		}else if(total_grade<=61 && total_grade >=58){
+			letter_grade = "D+";
+		}else if(total_grade<=65 && total_grade >=61){
+			letter_grade = "C-";
+		}else if(total_grade<=69 && total_grade >=66){
+			letter_grade = "C";
+		}else if(total_grade<=73 && total_grade >=70){
+			letter_grade = "C+";
+		}else if(total_grade<=77 && total_grade >=74){
+			letter_grade = "B-";
+		}else if(total_grade<=81 && total_grade >=78){
+			letter_grade = "B";
+		}else if(total_grade<=85 && total_grade >=82){
+			letter_grade = "B+";
+		}else if(total_grade<=89 && total_grade >=86){
+			letter_grade = "A-";
+		}else if(total_grade<=100 && total_grade >=90){
+			letter_grade = "A";
+		}
+		
+		System.out.println("Your overall grade is "+ total_grade + ", and your letter grade is " + letter_grade );
+		
+		}
 }
