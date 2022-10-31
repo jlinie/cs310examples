@@ -1,3 +1,5 @@
+//to check whether a year is leap or not
+
 import java.util.Scanner;
 
 public class Example2{
@@ -20,5 +22,4 @@ public class Example2{
 			System.out.println("It's not a leap year.");
 		}	
 	}
-	
 }
