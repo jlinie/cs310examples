@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-class deneme1 {
+class example1 {
 	public static void main (String []args) {
 	
 		System.out.println("Please enter grades of midterm 1 and midterm 2: ");
